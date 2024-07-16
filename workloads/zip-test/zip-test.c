@@ -60,7 +60,6 @@ __attribute__((constructor))
 //        shadow=create_verse(40960);
         //mmap_verse(shadow);
         verse_enter(0);
-        verse_mmap(0x80000000, 4096, PROT_WRITE|PROT_READ, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE);
     }
 
 /* main function to create the workload, run it, and report results */
@@ -143,7 +142,6 @@ return 0;
 
 __attribute__((destructor))
     static void fin() {
-  verse_munmap(0x80000000, 4096);
 //        exit_verse(shadow);
         verse_exit(0);
 	verse_destroy(0);
