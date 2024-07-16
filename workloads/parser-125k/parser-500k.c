@@ -40,6 +40,7 @@ extern void *t_run_test_parser(struct TCDef *,void *);
 extern int bmark_verify_parser(void *);
 extern int bmark_clean_parser(void *);
 
+
 /* main function to create the workload, run it, and report results */
 int main(int argc, char *argv[])
 {

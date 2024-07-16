@@ -1,0 +1,18 @@
+make -I/home/rkdgkdud/riscv-mini/coremark-pro/util/make -f Makefile.mak TARGET=riscv-verse workloads/sets/workload-joins.fpmark
+make[1]: Entering directory '/home/rkdgkdud/riscv-mini/coremark-pro'
+make[1]: Nothing to be done for 'workloads/sets/workload-joins.fpmark'.
+make[1]: Leaving directory '/home/rkdgkdud/riscv-mini/coremark-pro'
+make -I/home/rkdgkdud/riscv-mini/coremark-pro/util/make -f Makefile.mak TARGET=riscv-verse Makefile
+make[1]: Entering directory '/home/rkdgkdud/riscv-mini/coremark-pro'
+make[1]: Nothing to be done for 'Makefile'.
+make[1]: Leaving directory '/home/rkdgkdud/riscv-mini/coremark-pro'
+make -I/home/rkdgkdud/riscv-mini/coremark-pro/util/make -f Makefile.mak TARGET=riscv-verse wbuild-cjpeg-rose7-preset
+make[1]: Entering directory '/home/rkdgkdud/riscv-mini/coremark-pro'
+mkdir -p /home/rkdgkdud/riscv-mini/coremark-pro/builds/riscv64-verse/clang-verse/obj/mith
+make -C /home/rkdgkdud/riscv-mini/coremark-pro/builds/riscv64-verse/clang-verse/obj/mith -f /home/rkdgkdud/riscv-mini/coremark-pro/mith/Makefile all
+make[2]: Entering directory '/home/rkdgkdud/riscv-mini/coremark-pro/builds/riscv64-verse/clang-verse/obj/mith'
+make[2]: Leaving directory '/home/rkdgkdud/riscv-mini/coremark-pro/builds/riscv64-verse/clang-verse/obj/mith'
+make[2]: Entering directory '/home/rkdgkdud/riscv-mini/coremark-pro/builds/riscv64-verse/clang-verse/obj/workloads/cjpeg-rose7-preset'
+/home/rkdgkdud/project/riscv-tools/bin/clang  -o/home/rkdgkdud/riscv-mini/coremark-pro/builds/riscv64-verse/clang-verse/bin/cjpeg-rose7-preset.exe cjpeg-rose7-preset.o /home/rkdgkdud/riscv-mini/coremark-pro/builds/riscv64-verse/clang-verse/obj/bench/consumer_v2/cjpeg/*.o  /home/rkdgkdud/riscv-mini/coremark-pro/builds/riscv64-verse/clang-verse/obj/mith.a -lm -lrt -lpthread -static  -lm -lrt -lpthread -static 
+make[2]: Leaving directory '/home/rkdgkdud/riscv-mini/coremark-pro/builds/riscv64-verse/clang-verse/obj/workloads/cjpeg-rose7-preset'
+make[1]: Leaving directory '/home/rkdgkdud/riscv-mini/coremark-pro'

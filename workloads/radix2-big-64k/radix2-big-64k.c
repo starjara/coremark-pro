@@ -40,6 +40,7 @@ extern void *t_run_test_radix2(struct TCDef *,void *);
 extern int bmark_verify_radix2(void *);
 extern int bmark_clean_radix2(void *);
 
+
 /* main function to create the workload, run it, and report results */
 int main(int argc, char *argv[])
 {
@@ -117,4 +118,5 @@ int main(int argc, char *argv[])
 	workload=NULL;
 return 0;
 }
+
 

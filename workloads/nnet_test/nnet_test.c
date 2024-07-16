@@ -40,6 +40,7 @@ extern void *t_run_test_nnet(struct TCDef *,void *);
 extern int bmark_verify_nnet(void *);
 extern int bmark_clean_nnet(void *);
 
+
 /* main function to create the workload, run it, and report results */
 int main(int argc, char *argv[])
 {

@@ -82,6 +82,7 @@ extern void *t_run_test_cjpeg(struct TCDef *,void *);
 extern int bmark_verify_cjpeg(void *);
 extern int bmark_clean_cjpeg(void *);
 
+
 /* main function to create the workload, run it, and report results */
 int main(int argc, char *argv[])
 {

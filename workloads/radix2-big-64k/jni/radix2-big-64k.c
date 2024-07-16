@@ -15,6 +15,8 @@ Please refer to LICENSE.md for the specific license agreement that pertains to t
 #include "th_lib.h"
 #include "mith_workload.h"
 #include "al_smp.h"
+#include "/home/rkdgkdud/riscv-mini/verselib/verse.h"
+#include <sys/mman.h>
 
 /* helper function to initialize a workload item */
 ee_work_item_t *helper_radix2big64k(ee_workload *workload, void *params, char *name, void * (*init_func)(void *), e_u32 repeats_override,
