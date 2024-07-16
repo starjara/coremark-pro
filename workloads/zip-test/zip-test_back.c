@@ -1,13 +1,23 @@
-/* Created with: ../xml/radix2-big-64k.xml */
+/*
+(C) 2014 EEMBC(R).  All rights reserved.                            
+
+All EEMBC Benchmark Software are products of EEMBC 
+and are provided under the terms of the EEMBC Benchmark License Agreements.  
+The EEMBC Benchmark Software are proprietary intellectual properties of EEMBC and its Members 
+and is protected under all applicable laws, including all applicable copyright laws.  
+If you received this EEMBC Benchmark Software without having 
+a currently effective EEMBC Benchmark License Agreement, you must discontinue use. 
+Please refer to LICENSE.md for the specific license agreement that pertains to this Benchmark Software.
+*/
+
+/* Created with: ../xml/zip-test.xml */
 /* common */
 #include "th_lib.h"
 #include "mith_workload.h"
 #include "al_smp.h"
-#include "/home/rkdgkdud/riscv-mini/verselib/verse.h"
-#include <sys/mman.h>
 
 /* helper function to initialize a workload item */
-ee_work_item_t *helper_radix2big64k(ee_workload *workload, void *params, char *name, void * (*init_func)(void *), e_u32 repeats_override,
+ee_work_item_t *helper_ziptest(ee_workload *workload, void *params, char *name, void * (*init_func)(void *), e_u32 repeats_override,
 			void * (*bench_func)(struct TCDef *,void *), int (*cleanup)(void *), void * (*fini_func)(void *), int (*veri_func)(void *), int ncont,
 			e_u32 kernel_id, e_u32 instance_id) {
 	ee_work_item_t *item;
@@ -34,22 +44,14 @@ ee_work_item_t *helper_radix2big64k(ee_workload *workload, void *params, char *n
 	return item;
 }
 /* generated function types for each work item */
-/* radix2-big */
-extern void *define_params_radix2(unsigned int idx, char *name, char *dataset);
-extern void *bmark_init_radix2(void *);
-extern void *bmark_fini_radix2(void *);
-extern void *t_run_test_radix2(struct TCDef *,void *);
-extern int bmark_verify_radix2(void *);
-extern int bmark_clean_radix2(void *);
+/* zip */
+extern void *define_params_zip(unsigned int idx, char *name, char *dataset);
+extern void *bmark_init_zip(void *);
+extern void *bmark_fini_zip(void *);
+extern void *t_run_test_zip(struct TCDef *,void *);
+extern int bmark_verify_zip(void *);
+extern int bmark_clean_zip(void *);
 
-__attribute__((constructor))
-    static void init() {
-        verse_create(0);
-//        shadow=create_verse(40960);
-        //mmap_verse(shadow);
-        verse_enter(0);
-        verse_mmap(0x80000000, 4096, PROT_WRITE|PROT_READ, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE);
-    }
 
 /* main function to create the workload, run it, and report results */
 int main(int argc, char *argv[])
@@ -75,11 +77,11 @@ int main(int argc, char *argv[])
 	/* now prepare workload */
 	workload = mith_wl_init(1); /* num items extracted from xml: sum(item*instances) for all items */
 	real_items = (ee_work_item_t **)th_malloc(sizeof(ee_work_item_t *)*1);
-	th_strncpy(workload->shortname,"radix2-big-64k",MITH_MAX_NAME);
+	th_strncpy(workload->shortname,"zip-test",MITH_MAX_NAME);
 	workload->rev_M=1;
 	workload->rev_m=1;
-	workload->uid=1862946660;
-	workload->iterations=1000;
+	workload->uid=946108807;
+	workload->iterations=1;
 
 	/* parse command line for overrides
 	   overrides for num_iterations, num_contexts,
@@ -109,12 +111,12 @@ int main(int argc, char *argv[])
 		workload->iterations++;
 	
 /* ITEM 0-0 [0]*/
-	th_strncpy(name,"radix2-big",MITH_MAX_NAME);
+	th_strncpy(name,"zip",MITH_MAX_NAME);
 	if (orig_dataname) {
-		th_strncpy(dataname,"PRESET=data3_big",MITH_MAX_NAME);
+		th_strncpy(dataname,"NULL",MITH_MAX_NAME);
 	}
-	retval=define_params_radix2(3,name,dataname);
-	real_items[0]=helper_radix2big64k(workload,retval,name,bmark_init_radix2,bench_repeats,t_run_test_radix2,bmark_clean_radix2,bmark_fini_radix2,bmark_verify_radix2,1,(e_u32)1267328658,(e_u32)877645019);
+	retval=define_params_zip(0,name,dataname);
+	real_items[0]=helper_ziptest(workload,retval,name,bmark_init_zip,bench_repeats,t_run_test_zip,bmark_clean_zip,bmark_fini_zip,bmark_verify_zip,1,(e_u32)1199388670,(e_u32)1851860219);
 
 	/* Run the workload */
 	mith_main(workload,workload->iterations,num_contexts,oversubscribe_allowed,num_workers);
@@ -129,11 +131,3 @@ int main(int argc, char *argv[])
 return 0;
 }
 
-
-__attribute__((destructor))
-    static void fin() {
-  verse_munmap(0x80000000, 4096);
-//        exit_verse(shadow);
-        verse_exit(0);
-	verse_destroy(0);
-    }

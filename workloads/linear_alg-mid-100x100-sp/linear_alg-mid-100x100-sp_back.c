@@ -1,13 +1,11 @@
-/* Created with: ../xml/nnet_test.xml */
+/* Created with: ../xml/linear_alg-mid-100x100-sp.xml */
 /* common */
 #include "th_lib.h"
 #include "mith_workload.h"
 #include "al_smp.h"
-#include "/home/rkdgkdud/riscv-mini/verselib/verse.h"
-#include <sys/mman.h>
 
 /* helper function to initialize a workload item */
-ee_work_item_t *helper_nnettest(ee_workload *workload, void *params, char *name, void * (*init_func)(void *), e_u32 repeats_override,
+ee_work_item_t *helper_linearalgmid100x100sp(ee_workload *workload, void *params, char *name, void * (*init_func)(void *), e_u32 repeats_override,
 			void * (*bench_func)(struct TCDef *,void *), int (*cleanup)(void *), void * (*fini_func)(void *), int (*veri_func)(void *), int ncont,
 			e_u32 kernel_id, e_u32 instance_id) {
 	ee_work_item_t *item;
@@ -34,22 +32,13 @@ ee_work_item_t *helper_nnettest(ee_workload *workload, void *params, char *name,
 	return item;
 }
 /* generated function types for each work item */
-/* nnet */
-extern void *define_params_nnet(unsigned int idx, char *name, char *dataset);
-extern void *bmark_init_nnet(void *);
-extern void *bmark_fini_nnet(void *);
-extern void *t_run_test_nnet(struct TCDef *,void *);
-extern int bmark_verify_nnet(void *);
-extern int bmark_clean_nnet(void *);
-
-__attribute__((constructor))
-    static void init() {
-        verse_create(0);
-//        shadow=create_verse(40960);
-        //mmap_verse(shadow);
-        verse_enter(0);
-        verse_mmap(0x80000000, 4096, PROT_WRITE|PROT_READ, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE);
-    }
+/* linear_alg-mid */
+extern void *define_params_linpack(unsigned int idx, char *name, char *dataset);
+extern void *bmark_init_linpack(void *);
+extern void *bmark_fini_linpack(void *);
+extern void *t_run_test_linpack(struct TCDef *,void *);
+extern int bmark_verify_linpack(void *);
+extern int bmark_clean_linpack(void *);
 
 /* main function to create the workload, run it, and report results */
 int main(int argc, char *argv[])
@@ -75,11 +64,11 @@ int main(int argc, char *argv[])
 	/* now prepare workload */
 	workload = mith_wl_init(1); /* num items extracted from xml: sum(item*instances) for all items */
 	real_items = (ee_work_item_t **)th_malloc(sizeof(ee_work_item_t *)*1);
-	th_strncpy(workload->shortname,"nnet_test",MITH_MAX_NAME);
+	th_strncpy(workload->shortname,"linear_alg-mid-100x100-sp",MITH_MAX_NAME);
 	workload->rev_M=1;
 	workload->rev_m=1;
-	workload->uid=549578576;
-	workload->iterations=10;
+	workload->uid=1046644201;
+	workload->iterations=50;
 
 	/* parse command line for overrides
 	   overrides for num_iterations, num_contexts,
@@ -109,12 +98,12 @@ int main(int argc, char *argv[])
 		workload->iterations++;
 	
 /* ITEM 0-0 [0]*/
-	th_strncpy(name,"nnet",MITH_MAX_NAME);
+	th_strncpy(name,"linear_alg-mid",MITH_MAX_NAME);
 	if (orig_dataname) {
-		th_strncpy(dataname,"NULL",MITH_MAX_NAME);
+		th_strncpy(dataname,"100x100",MITH_MAX_NAME);
 	}
-	retval=define_params_nnet(0,name,dataname);
-	real_items[0]=helper_nnettest(workload,retval,name,bmark_init_nnet,bench_repeats,t_run_test_nnet,bmark_clean_nnet,bmark_fini_nnet,bmark_verify_nnet,1,(e_u32)567581359,(e_u32)880349224);
+	retval=define_params_linpack(4,name,dataname);
+	real_items[0]=helper_linearalgmid100x100sp(workload,retval,name,bmark_init_linpack,bench_repeats,t_run_test_linpack,bmark_clean_linpack,bmark_fini_linpack,bmark_verify_linpack,1,(e_u32)1542051343,(e_u32)1128020447);
 
 	/* Run the workload */
 	mith_main(workload,workload->iterations,num_contexts,oversubscribe_allowed,num_workers);
@@ -129,10 +118,3 @@ int main(int argc, char *argv[])
 return 0;
 }
 
-__attribute__((destructor))
-    static void fin() {
-  verse_munmap(0x80000000, 4096);
-//        exit_verse(shadow);
-        verse_exit(0);
-	verse_destroy(0);
-    }

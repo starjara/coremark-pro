@@ -148,3 +148,25 @@
   wld-flags: 
  24198:16:44:08 zip-test
   wld-flags: 
+24198:17:26:00 Starting build
+  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
+ 24198:17:26:01 mith
+  bench-flags: 
+ 24198:17:26:02 cjpeg-rose7-preset
+  wld-flags: 
+ 24198:17:26:02 core
+  wld-flags: 
+ 24198:17:26:03 linear_alg-mid-100x100-sp
+  wld-flags: 
+ 24198:17:26:03 loops-all-mid-10k-sp
+  wld-flags: 
+ 24198:17:26:04 nnet_test
+  wld-flags: 
+ 24198:17:26:04 parser-125k
+  wld-flags: 
+ 24198:17:26:05 radix2-big-64k
+  wld-flags: 
+ 24198:17:26:05 sha-test
+  wld-flags: 
+ 24198:17:26:06 zip-test
+  wld-flags: 
