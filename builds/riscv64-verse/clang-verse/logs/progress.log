@@ -1,194 +1,22 @@
-24198:15:46:24 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -lverse -L/home/rkdgkdud/riscv-mini/verselib/libverse.a -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:15:46:25 mith
-  bench-flags: 
-24198:15:47:03 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -lverse -L/home/rkdgkdud/riscv-mini/verselib/libverse.a -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:15:47:04 mith
-  bench-flags: 
-24198:15:48:29 Starting build
+24199:01:58:44 Starting build
   flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:15:48:30 mith
+ 24199:01:58:44 mith
   bench-flags: 
-24198:15:49:50 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -lverse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:15:49:51 mith
-  bench-flags: 
-24198:15:52:10 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:15:52:11 mith
-  bench-flags: 
-24198:15:58:21 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:15:58:22 mith
-  bench-flags: 
-24198:16:01:37 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:01:38 mith
-  bench-flags: 
-24198:16:03:55 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:03:56 mith
-  bench-flags: 
-24198:16:08:22 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:08:23 mith
-  bench-flags: 
-24198:16:09:50 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:09:51 mith
-  bench-flags: 
-24198:16:10:15 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:10:15 mith
-  bench-flags: 
-24198:16:10:27 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:10:28 mith
-  bench-flags: 
-24198:16:13:31 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:13:32 mith
-  bench-flags: 
-24198:16:14:08 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:14:08 mith
-  bench-flags: 
-24198:16:18:11 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:18:11 mith
-  bench-flags: 
-24198:16:21:25 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:21:25 mith
-  bench-flags: 
-24198:16:21:57 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:21:57 mith
-  bench-flags: 
-24198:16:22:12 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:22:12 mith
-  bench-flags: 
-24198:16:22:29 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:22:29 mith
-  bench-flags: 
-24198:16:22:37 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:22:38 mith
-  bench-flags: 
-24198:16:24:19 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:24:19 mith
-  bench-flags: 
-24198:16:24:36 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:24:36 mith
-  bench-flags: 
-24198:16:25:07 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:25:07 mith
-  bench-flags: 
-24198:16:25:45 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:25:45 mith
-  bench-flags: 
-24198:16:30:02 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:30:03 mith
-  bench-flags: 
-24198:16:33:02 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:33:03 mith
-  bench-flags: 
- 24198:16:33:04 cjpeg-rose7-preset
+ 24199:01:58:46 cjpeg-rose7-preset
   wld-flags: 
-24198:16:33:30 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:33:31 mith
-  bench-flags: 
- 24198:16:33:32 cjpeg-rose7-preset
+ 24199:01:58:46 core
   wld-flags: 
- 24198:16:33:33 core
+ 24199:01:58:46 linear_alg-mid-100x100-sp
   wld-flags: 
- 24198:16:33:33 linear_alg-mid-100x100-sp
+ 24199:01:58:47 loops-all-mid-10k-sp
   wld-flags: 
- 24198:16:33:34 loops-all-mid-10k-sp
+ 24199:01:58:47 nnet_test
   wld-flags: 
- 24198:16:33:34 nnet_test
+ 24199:01:58:48 parser-125k
   wld-flags: 
- 24198:16:33:34 parser-125k
+ 24199:01:58:48 radix2-big-64k
   wld-flags: 
- 24198:16:33:35 radix2-big-64k
+ 24199:01:58:49 sha-test
   wld-flags: 
- 24198:16:33:35 sha-test
-  wld-flags: 
- 24198:16:33:36 zip-test
-  wld-flags: 
-24198:16:44:02 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:16:44:03 mith
-  bench-flags: 
- 24198:16:44:04 cjpeg-rose7-preset
-  wld-flags: 
- 24198:16:44:05 core
-  wld-flags: 
- 24198:16:44:05 linear_alg-mid-100x100-sp
-  wld-flags: 
- 24198:16:44:05 loops-all-mid-10k-sp
-  wld-flags: 
- 24198:16:44:06 nnet_test
-  wld-flags: 
- 24198:16:44:06 parser-125k
-  wld-flags: 
- 24198:16:44:07 radix2-big-64k
-  wld-flags: 
- 24198:16:44:07 sha-test
-  wld-flags: 
- 24198:16:44:08 zip-test
-  wld-flags: 
-24198:17:26:00 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:17:26:01 mith
-  bench-flags: 
- 24198:17:26:02 cjpeg-rose7-preset
-  wld-flags: 
- 24198:17:26:02 core
-  wld-flags: 
- 24198:17:26:03 linear_alg-mid-100x100-sp
-  wld-flags: 
- 24198:17:26:03 loops-all-mid-10k-sp
-  wld-flags: 
- 24198:17:26:04 nnet_test
-  wld-flags: 
- 24198:17:26:04 parser-125k
-  wld-flags: 
- 24198:17:26:05 radix2-big-64k
-  wld-flags: 
- 24198:17:26:05 sha-test
-  wld-flags: 
- 24198:17:26:06 zip-test
-  wld-flags: 
-24198:17:43:11 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:17:43:12 mith
-  bench-flags: 
- 24198:17:43:14 cjpeg-rose7-preset
-  wld-flags: 
- 24198:17:43:14 core
-  wld-flags: 
- 24198:17:43:14 linear_alg-mid-100x100-sp
-  wld-flags: 
- 24198:17:43:15 loops-all-mid-10k-sp
-  wld-flags: 
- 24198:17:43:15 nnet_test
-  wld-flags: 
- 24198:17:43:16 parser-125k
-  wld-flags: 
- 24198:17:43:16 radix2-big-64k
-  wld-flags: 
- 24198:17:43:17 sha-test
-  wld-flags: 
- 24198:17:43:18 zip-test
+ 24199:01:58:50 zip-test
   wld-flags: 

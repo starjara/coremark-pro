@@ -3,8 +3,6 @@
 #include "th_lib.h"
 #include "mith_workload.h"
 #include "al_smp.h"
-#include "/home/rkdgkdud/riscv-mini/verselib/verse.h"
-#include <sys/mman.h>
 
 /* helper function to initialize a workload item */
 ee_work_item_t *helper_radix2big64k(ee_workload *workload, void *params, char *name, void * (*init_func)(void *), e_u32 repeats_override,
@@ -42,13 +40,6 @@ extern void *t_run_test_radix2(struct TCDef *,void *);
 extern int bmark_verify_radix2(void *);
 extern int bmark_clean_radix2(void *);
 
-__attribute__((constructor))
-    static void init() {
-        verse_create(0);
-//        shadow=create_verse(40960);
-        //mmap_verse(shadow);
-        verse_enter(0);
-    }
 
 /* main function to create the workload, run it, and report results */
 int main(int argc, char *argv[])
@@ -129,9 +120,3 @@ return 0;
 }
 
 
-__attribute__((destructor))
-    static void fin() {
-//        exit_verse(shadow);
-        verse_exit(0);
-	verse_destroy(0);
-    }

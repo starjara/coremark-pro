@@ -1,48 +1,22 @@
-24198:17:05:06 Starting build
+24199:01:56:48 Starting build
   flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:17:05:07 mith
+ 24199:01:56:49 mith
   bench-flags: 
- 24198:17:05:08 cjpeg-rose7-preset
+ 24199:01:56:50 cjpeg-rose7-preset
   wld-flags: 
- 24198:17:05:09 core
+ 24199:01:56:50 core
   wld-flags: 
- 24198:17:05:09 linear_alg-mid-100x100-sp
+ 24199:01:56:51 linear_alg-mid-100x100-sp
   wld-flags: 
- 24198:17:05:09 loops-all-mid-10k-sp
+ 24199:01:56:51 loops-all-mid-10k-sp
   wld-flags: 
- 24198:17:05:10 nnet_test
+ 24199:01:56:51 nnet_test
   wld-flags: 
- 24198:17:05:10 parser-125k
+ 24199:01:56:52 parser-125k
   wld-flags: 
- 24198:17:05:11 radix2-big-64k
+ 24199:01:56:53 radix2-big-64k
   wld-flags: 
- 24198:17:05:11 sha-test
+ 24199:01:56:53 sha-test
   wld-flags: 
- 24198:17:05:12 zip-test
-  wld-flags: 
-24198:17:19:43 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:17:19:43 mith
-  bench-flags: 
-24198:17:21:18 Starting build
-  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
- 24198:17:21:19 mith
-  bench-flags: 
- 24198:17:21:20 cjpeg-rose7-preset
-  wld-flags: 
- 24198:17:21:21 core
-  wld-flags: 
- 24198:17:21:21 linear_alg-mid-100x100-sp
-  wld-flags: 
- 24198:17:21:21 loops-all-mid-10k-sp
-  wld-flags: 
- 24198:17:21:22 nnet_test
-  wld-flags: 
- 24198:17:21:22 parser-125k
-  wld-flags: 
- 24198:17:21:23 radix2-big-64k
-  wld-flags: 
- 24198:17:21:23 sha-test
-  wld-flags: 
- 24198:17:21:24 zip-test
+ 24199:01:56:54 zip-test
   wld-flags: 
