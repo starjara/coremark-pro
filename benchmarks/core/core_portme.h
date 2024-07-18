@@ -141,7 +141,7 @@ typedef size_t ee_size_t;
 	to fit a particular architecture. 
 */
 #ifndef MULTITHREAD
-#define MULTITHREAD 0
+#define MULTITHREAD 1
 #endif
 
 /* Configuration: USE_PTHREAD

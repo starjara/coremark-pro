@@ -62,7 +62,7 @@ done.build: $(IMAGE)
 	touch done.build
 
 $(IMAGE): $(MYDIRS) $(MYOBJD) $(LIB_TH)
-	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
+	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) /home/rkdgkdud/riscv-mini/coremark-pro/const.o $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
 	
 $(MYDIRS):
 	$(MDIR) $@
