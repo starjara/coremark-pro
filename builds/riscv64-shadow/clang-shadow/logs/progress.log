@@ -20,3 +20,91 @@
   wld-flags: 
  24199:01:56:54 zip-test
   wld-flags: 
+24199:03:57:25 Starting build
+  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
+ 24199:03:57:26 mith
+  bench-flags: 
+ 24199:03:57:27 cjpeg-rose7-preset
+  wld-flags: 
+ 24199:03:57:28 core
+  wld-flags: 
+ 24199:03:57:28 linear_alg-mid-100x100-sp
+  wld-flags: 
+ 24199:03:57:29 loops-all-mid-10k-sp
+  wld-flags: 
+ 24199:03:57:29 nnet_test
+  wld-flags: 
+ 24199:03:57:29 parser-125k
+  wld-flags: 
+ 24199:03:57:30 radix2-big-64k
+  wld-flags: 
+ 24199:03:57:30 sha-test
+  wld-flags: 
+ 24199:03:57:31 zip-test
+  wld-flags: 
+24199:04:04:45 Starting build
+  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
+ 24199:04:04:46 mith
+  bench-flags: 
+ 24199:04:04:47 cjpeg-rose7-preset
+  wld-flags: 
+ 24199:04:04:48 core
+  wld-flags: 
+ 24199:04:04:48 linear_alg-mid-100x100-sp
+  wld-flags: 
+ 24199:04:04:49 loops-all-mid-10k-sp
+  wld-flags: 
+ 24199:04:04:49 nnet_test
+  wld-flags: 
+ 24199:04:04:49 parser-125k
+  wld-flags: 
+ 24199:04:04:50 radix2-big-64k
+  wld-flags: 
+ 24199:04:04:50 sha-test
+  wld-flags: 
+ 24199:04:04:51 zip-test
+  wld-flags: 
+24199:11:34:18 Starting build
+  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
+ 24199:11:34:19 mith
+  bench-flags: 
+ 24199:11:34:20 cjpeg-rose7-preset
+  wld-flags: 
+ 24199:11:34:21 core
+  wld-flags: 
+ 24199:11:34:21 linear_alg-mid-100x100-sp
+  wld-flags: 
+ 24199:11:34:21 loops-all-mid-10k-sp
+  wld-flags: 
+ 24199:11:34:22 nnet_test
+  wld-flags: 
+ 24199:11:34:22 parser-125k
+  wld-flags: 
+ 24199:11:34:23 radix2-big-64k
+  wld-flags: 
+ 24199:11:34:23 sha-test
+  wld-flags: 
+ 24199:11:34:24 zip-test
+  wld-flags: 
+24199:11:34:36 Starting build
+  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
+ 24199:11:34:37 mith
+  bench-flags: 
+ 24199:11:34:38 cjpeg-rose7-preset
+  wld-flags: 
+ 24199:11:34:38 core
+  wld-flags: 
+ 24199:11:34:39 linear_alg-mid-100x100-sp
+  wld-flags: 
+ 24199:11:34:39 loops-all-mid-10k-sp
+  wld-flags: 
+ 24199:11:34:40 nnet_test
+  wld-flags: 
+ 24199:11:34:40 parser-125k
+  wld-flags: 
+ 24199:11:34:41 radix2-big-64k
+  wld-flags: 
+ 24199:11:34:41 sha-test
+  wld-flags: 
+ 24199:11:34:42 zip-test
+  wld-flags: 

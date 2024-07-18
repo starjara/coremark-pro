@@ -134,7 +134,7 @@ ASSEMBLER_INCLUDES	=
 
 # LINKER SECTION
 # -lm is optional. Some linkers (linux gcc) do not include math library by default.
-LINKER_FLAGS	+= 
+LINKER_FLAGS	+= -no-pie
 ifeq ($(PLATFORM),cygwin)
 LINKER_FLAGS	+= -Wl,--stack,33554432
 endif
