@@ -1,18 +1,18 @@
-MYNAME = loops-all-mid-10k-sp
+MYNAME = linear_alg-mid-100x100-sp
 include common.mak
 
 ifndef SELECT_PRESET_ID
 USE_PRESET=FALSE
 endif
-MYDIR = loops-all-mid-10k-sp
-IMAGE = $(DIR_IMG)/loops-all-mid-10k-sp$(EXE)
+MYDIR = linear_alg-mid-100x100-sp
+IMAGE = $(DIR_IMG)/linear_alg-mid-100x100-sp$(EXE)
 ITEMS = \
-	fp/loops \
+	fp/linpack \
 
-loops-all-mid-10k-sp$(OEXT): loops-all-mid-10k-sp.c
+linear_alg-mid-100x100-sp$(OEXT): linear_alg-mid-100x100-sp.c
 
-MYOBJD = loops-all-mid-10k-sp$(OEXT)
-MYOBJS_WORKLOAD = loops-all-mid-10k-sp$(OEXT)
+MYOBJD = linear_alg-mid-100x100-sp$(OEXT)
+MYOBJS_WORKLOAD = linear_alg-mid-100x100-sp$(OEXT)
 ifndef PRECISION
 PRECISION=SP
 MAKEFLAGS+=PRECISION=SP
@@ -62,7 +62,7 @@ done.build: $(IMAGE)
 	touch done.build
 
 $(IMAGE): $(MYDIRS) $(MYOBJD) $(LIB_TH)
-	$(LD) -Wl,--no-relax-gp,-T/home/rkdgkdud/riscv-mini/verselib/custom.x $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
+	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
 	
 $(MYDIRS):
 	$(MDIR) $@

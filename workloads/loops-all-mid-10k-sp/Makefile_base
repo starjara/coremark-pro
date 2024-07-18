@@ -1,22 +1,22 @@
-MYNAME = radix2-big-64k
+MYNAME = loops-all-mid-10k-sp
 include common.mak
-
-
-export SELECT_PRESET_ID=3
-export SELECT_PRESET_NAME=data3_big
 
 ifndef SELECT_PRESET_ID
 USE_PRESET=FALSE
 endif
-MYDIR = radix2-big-64k
-IMAGE = $(DIR_IMG)/radix2-big-64k$(EXE)
+MYDIR = loops-all-mid-10k-sp
+IMAGE = $(DIR_IMG)/loops-all-mid-10k-sp$(EXE)
 ITEMS = \
-	fp/fft_radix2 \
+	fp/loops \
 
-radix2-big-64k$(OEXT): radix2-big-64k.c
+loops-all-mid-10k-sp$(OEXT): loops-all-mid-10k-sp.c
 
-MYOBJD = radix2-big-64k$(OEXT)
-MYOBJS_WORKLOAD = radix2-big-64k$(OEXT)
+MYOBJD = loops-all-mid-10k-sp$(OEXT)
+MYOBJS_WORKLOAD = loops-all-mid-10k-sp$(OEXT)
+ifndef PRECISION
+PRECISION=SP
+MAKEFLAGS+=PRECISION=SP
+endif
 
 ifdef PRECISION
 ifeq ($(PRECISION),DP)
@@ -62,7 +62,7 @@ done.build: $(IMAGE)
 	touch done.build
 
 $(IMAGE): $(MYDIRS) $(MYOBJD) $(LIB_TH)
-	$(LD) -Wl,--no-relax-gp,-T/home/rkdgkdud/riscv-mini/verselib/custom.x $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
+	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
 	
 $(MYDIRS):
 	$(MDIR) $@

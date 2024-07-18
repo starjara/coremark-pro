@@ -1,18 +1,18 @@
-MYNAME = nnet_test
+MYNAME = parser-125k
 include common.mak
 
 ifndef SELECT_PRESET_ID
 USE_PRESET=FALSE
 endif
-MYDIR = nnet_test
-IMAGE = $(DIR_IMG)/nnet_test$(EXE)
+MYDIR = parser-125k
+IMAGE = $(DIR_IMG)/parser-125k$(EXE)
 ITEMS = \
-	fp/nnet \
+	darkmark/parser \
 
-nnet_test$(OEXT): nnet_test.c
+parser-125k$(OEXT): parser-125k.c
 
-MYOBJD = nnet_test$(OEXT)
-MYOBJS_WORKLOAD = nnet_test$(OEXT)
+MYOBJD = parser-125k$(OEXT)
+MYOBJS_WORKLOAD = parser-125k$(OEXT)
 
 ifdef PRECISION
 ifeq ($(PRECISION),DP)
@@ -58,7 +58,7 @@ done.build: $(IMAGE)
 	touch done.build
 
 $(IMAGE): $(MYDIRS) $(MYOBJD) $(LIB_TH)
-	$(LD) -Wl,--no-relax-gp,-T/home/rkdgkdud/riscv-mini/verselib/custom.x $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
+	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
 	
 $(MYDIRS):
 	$(MDIR) $@

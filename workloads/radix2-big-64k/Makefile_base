@@ -1,18 +1,22 @@
-MYNAME = parser-125k
+MYNAME = radix2-big-64k
 include common.mak
+
+
+export SELECT_PRESET_ID=3
+export SELECT_PRESET_NAME=data3_big
 
 ifndef SELECT_PRESET_ID
 USE_PRESET=FALSE
 endif
-MYDIR = parser-125k
-IMAGE = $(DIR_IMG)/parser-125k$(EXE)
+MYDIR = radix2-big-64k
+IMAGE = $(DIR_IMG)/radix2-big-64k$(EXE)
 ITEMS = \
-	darkmark/parser \
+	fp/fft_radix2 \
 
-parser-125k$(OEXT): parser-125k.c
+radix2-big-64k$(OEXT): radix2-big-64k.c
 
-MYOBJD = parser-125k$(OEXT)
-MYOBJS_WORKLOAD = parser-125k$(OEXT)
+MYOBJD = radix2-big-64k$(OEXT)
+MYOBJS_WORKLOAD = radix2-big-64k$(OEXT)
 
 ifdef PRECISION
 ifeq ($(PRECISION),DP)
@@ -58,7 +62,7 @@ done.build: $(IMAGE)
 	touch done.build
 
 $(IMAGE): $(MYDIRS) $(MYOBJD) $(LIB_TH)
-	$(LD) -Wl,--no-relax-gp,-T/home/rkdgkdud/riscv-mini/verselib/custom.x $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
+	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
 	
 $(MYDIRS):
 	$(MDIR) $@
