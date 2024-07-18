@@ -116,7 +116,7 @@ COMPILER_INCLUDES =
 # Optional - Passed to compiler, here or in makefile to override THCFG defines.
 # This flag contains the only difference from gcc for 32b platform, defining size of long and pointer types.
 # It is also possible to simply define these in the th_cfg.h file for the platform.
-COMPILER_DEFINES += HAVE_SYS_STAT_H=1 USE_NATIVE_PTHREAD=1 GCC_INLINE_MACRO=1 NO_RESTRICT_QUALIFIER=1
+COMPILER_DEFINES += HAVE_SYS_STAT_H=1 USE_NATIVE_PTHREAD=0 USE_SINGLE_CONTEXT=1 GCC_INLINE_MACRO=1 NO_RESTRICT_QUALIFIER=1
 COMPILER_DEFINES += EE_SIZEOF_LONG=8 EE_SIZEOF_PTR=8 EE_PTR_ALIGN=8
 ifeq ($(DO_MICA),yes)
 COMPILER_DEFINES += DO_MICA=1

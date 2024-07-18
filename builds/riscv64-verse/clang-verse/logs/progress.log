@@ -288,3 +288,69 @@
   wld-flags: 
  24200:16:22:25 zip-test
   wld-flags: 
+24200:16:48:29 Starting build
+  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
+ 24200:16:48:30 mith
+  bench-flags: 
+ 24200:16:48:31 cjpeg-rose7-preset
+  wld-flags: 
+ 24200:16:48:32 core
+  wld-flags: 
+ 24200:16:48:32 linear_alg-mid-100x100-sp
+  wld-flags: 
+ 24200:16:48:33 loops-all-mid-10k-sp
+  wld-flags: 
+ 24200:16:48:33 nnet_test
+  wld-flags: 
+ 24200:16:48:33 parser-125k
+  wld-flags: 
+ 24200:16:48:34 radix2-big-64k
+  wld-flags: 
+ 24200:16:48:34 sha-test
+  wld-flags: 
+ 24200:16:48:35 zip-test
+  wld-flags: 
+24200:16:49:48 Starting build
+  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
+ 24200:16:49:49 mith
+  bench-flags: 
+ 24200:16:49:51 cjpeg-rose7-preset
+  wld-flags: 
+ 24200:16:49:51 core
+  wld-flags: 
+ 24200:16:49:51 linear_alg-mid-100x100-sp
+  wld-flags: 
+ 24200:16:49:52 loops-all-mid-10k-sp
+  wld-flags: 
+ 24200:16:49:52 nnet_test
+  wld-flags: 
+ 24200:16:49:52 parser-125k
+  wld-flags: 
+ 24200:16:49:53 radix2-big-64k
+  wld-flags: 
+ 24200:16:49:54 sha-test
+  wld-flags: 
+ 24200:16:49:55 zip-test
+  wld-flags: 
+24200:16:51:24 Starting build
+  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -fsanitize=shadow-call-stack-verse -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=0 -DUSE_SINGLE_CONTEXT=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
+ 24200:16:51:25 mith
+  bench-flags: 
+ 24200:16:51:26 cjpeg-rose7-preset
+  wld-flags: 
+ 24200:16:51:26 core
+  wld-flags: 
+ 24200:16:51:27 linear_alg-mid-100x100-sp
+  wld-flags: 
+ 24200:16:51:27 loops-all-mid-10k-sp
+  wld-flags: 
+ 24200:16:51:28 nnet_test
+  wld-flags: 
+ 24200:16:51:28 parser-125k
+  wld-flags: 
+ 24200:16:51:29 radix2-big-64k
+  wld-flags: 
+ 24200:16:51:29 sha-test
+  wld-flags: 
+ 24200:16:51:30 zip-test
+  wld-flags: 
