@@ -54,3 +54,25 @@
   bench-flags: 
  24200:16:14:44 cjpeg-rose7-preset
   wld-flags: 
+24200:16:58:36 Starting build
+  flags: -g -O2 -DNDEBUG -DHOST_EXAMPLE_CODE=1 -static -DHAVE_SYS_STAT_H=1 -DUSE_NATIVE_PTHREAD=0 -DUSE_SINGLE_CONTEXT=1 -DGCC_INLINE_MACRO=1 -DNO_RESTRICT_QUALIFIER=1 -DEE_SIZEOF_LONG=8 -DEE_SIZEOF_PTR=8 -DEE_PTR_ALIGN=8 -DEE_SIZEOF_INT=4 -DEE_SIZEOF_LONG=8  -static 
+ 24200:16:58:37 mith
+  bench-flags: 
+ 24200:16:58:39 cjpeg-rose7-preset
+  wld-flags: 
+ 24200:16:58:39 core
+  wld-flags: 
+ 24200:16:58:39 linear_alg-mid-100x100-sp
+  wld-flags: 
+ 24200:16:58:40 loops-all-mid-10k-sp
+  wld-flags: 
+ 24200:16:58:40 nnet_test
+  wld-flags: 
+ 24200:16:58:41 parser-125k
+  wld-flags: 
+ 24200:16:58:41 radix2-big-64k
+  wld-flags: 
+ 24200:16:58:42 sha-test
+  wld-flags: 
+ 24200:16:58:43 zip-test
+  wld-flags: 

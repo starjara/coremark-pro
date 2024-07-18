@@ -1,18 +1,18 @@
-MYNAME = core
+MYNAME = nnet_test
 include common.mak
 
 ifndef SELECT_PRESET_ID
 USE_PRESET=FALSE
 endif
-MYDIR = core
-IMAGE = $(DIR_IMG)/core$(EXE)
+MYDIR = nnet_test
+IMAGE = $(DIR_IMG)/nnet_test$(EXE)
 ITEMS = \
-	core \
+	fp/nnet \
 
-core$(OEXT): core.c
+nnet_test$(OEXT): nnet_test.c
 
-MYOBJD = core$(OEXT)
-MYOBJS_WORKLOAD = core$(OEXT)
+MYOBJD = nnet_test$(OEXT)
+MYOBJS_WORKLOAD = nnet_test$(OEXT)
 
 ifdef PRECISION
 ifeq ($(PRECISION),DP)
@@ -58,7 +58,7 @@ done.build: $(IMAGE)
 	touch done.build
 
 $(IMAGE): $(MYDIRS) $(MYOBJD) $(LIB_TH)
-	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
+	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) /home/rkdgkdud/riscv-mini/coremark-pro/const.o $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
 	
 $(MYDIRS):
 	$(MDIR) $@

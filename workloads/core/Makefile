@@ -58,7 +58,7 @@ done.build: $(IMAGE)
 	touch done.build
 
 $(IMAGE): $(MYDIRS) $(MYOBJD) $(LIB_TH)
-	$(LD) -Wl,--no-relax-gp,-T/home/rkdgkdud/riscv-mini/verselib/custom.x $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
+	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
 	
 $(MYDIRS):
 	$(MDIR) $@

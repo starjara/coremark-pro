@@ -1,22 +1,22 @@
-MYNAME = linear_alg-mid-100x100-sp
+MYNAME = radix2-big-64k
 include common.mak
+
+
+export SELECT_PRESET_ID=3
+export SELECT_PRESET_NAME=data3_big
 
 ifndef SELECT_PRESET_ID
 USE_PRESET=FALSE
 endif
-MYDIR = linear_alg-mid-100x100-sp
-IMAGE = $(DIR_IMG)/linear_alg-mid-100x100-sp$(EXE)
+MYDIR = radix2-big-64k
+IMAGE = $(DIR_IMG)/radix2-big-64k$(EXE)
 ITEMS = \
-	fp/linpack \
+	fp/fft_radix2 \
 
-linear_alg-mid-100x100-sp$(OEXT): linear_alg-mid-100x100-sp.c
+radix2-big-64k$(OEXT): radix2-big-64k.c
 
-MYOBJD = linear_alg-mid-100x100-sp$(OEXT)
-MYOBJS_WORKLOAD = linear_alg-mid-100x100-sp$(OEXT)
-ifndef PRECISION
-PRECISION=SP
-MAKEFLAGS+=PRECISION=SP
-endif
+MYOBJD = radix2-big-64k$(OEXT)
+MYOBJS_WORKLOAD = radix2-big-64k$(OEXT)
 
 ifdef PRECISION
 ifeq ($(PRECISION),DP)
@@ -62,7 +62,7 @@ done.build: $(IMAGE)
 	touch done.build
 
 $(IMAGE): $(MYDIRS) $(MYOBJD) $(LIB_TH)
-	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
+	$(LD) $(LINKER_FLAGS) $(EXEOUT)$(IMAGE_NAME) $(MYOBJS_NAME) /home/rkdgkdud/riscv-mini/coremark-pro/const.o $(BENCH_LIBS) $(LIB_TH_NAME) $(LINKER_LAST)
 	
 $(MYDIRS):
 	$(MDIR) $@
