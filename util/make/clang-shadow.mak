@@ -134,9 +134,9 @@ ASSEMBLER_INCLUDES	=
 
 # LINKER SECTION
 # -lm is optional. Some linkers (linux gcc) do not include math library by default.
-LINKER_FLAGS	+= -no-pie
+LINKER_FLAGS	+= 
 ifeq ($(PLATFORM),cygwin)
-LINKER_FLAGS	+= -Wl,--stack,33554432
+LINKER_FLAGS	+= -Wl,--stack,33554432 -static
 endif
 
 LINKER_INCLUDES	= 
@@ -144,7 +144,7 @@ LINKER_INCLUDES	=
 # to be placed last on the command line to resolve references.
 # some linkers require -lrt since they do not include realtime clock functions by default.
 ifneq ($(PLATFORM),cygwin)
-LINKER_LAST 	+= -lm -lrt -lpthread
+LINKER_LAST 	+= -lm -lrt -lpthread -static
 endif
 
 # LIBRARIAN SECTION
