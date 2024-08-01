@@ -18,7 +18,7 @@ coremarkpro-wld =  \
 	linear_alg-mid-100x100-sp \
 	loops-all-mid-10k-sp \
 	nnet_test \
-	parser-125k \
+	parser-500k \
 	radix2-big-64k \
 	sha-test \
 	zip-test \

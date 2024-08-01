@@ -92,15 +92,19 @@ Please refer to LICENSE.md for the specific license agreement that pertains to t
 		#define TIMER_RES_DIVIDER 1000
 		#endif
 	#else /* assumes gcc like headers */
-		#define NSECS_PER_SEC 1000000000
+#define NSECS_PER_SEC 1000000000
 		#define EE_TIMER_TICKER_RATE 1000
 		#include <time.h>
-		#define ALTIMETYPE struct timespec 
-		#define GETMYTIME(_t) clock_gettime(CLOCK_REALTIME,_t)
-		#define MYTIMEDIFF(fin,ini) ((fin.tv_sec-ini.tv_sec)*(NSECS_PER_SEC/TIMER_RES_DIVIDER)+(fin.tv_nsec-ini.tv_nsec)/TIMER_RES_DIVIDER)
+#define ALTIMETYPE struct timespec 
+//#define ALTIMETYPE  unsigned long long
+#define GETMYTIME(_t) clock_gettime(CLOCK_REALTIME,_t)
+//#define GETMYTIME(_t) __asm ("rdcycle %0": "=r"(*_t)); *_t = (*_t) / TIMER_RES_DIVIDER
+#define MYTIMEDIFF(fin,ini) ((fin.tv_sec-ini.tv_sec)*(NSECS_PER_SEC/TIMER_RES_DIVIDER)+(fin.tv_nsec-ini.tv_nsec)/TIMER_RES_DIVIDER)
+//#define MYTIMEDIFF(fin, ini) ((fin) - (ini)) 
 		/* setting to 1/1000 of a second resolution by default with linux */
 		#ifndef TIMER_RES_DIVIDER
-		#define TIMER_RES_DIVIDER 1000000
+#define TIMER_RES_DIVIDER 1000000
+//#define TIMER_RES_DIVIDER 1000
 		#endif
 	#endif
 	ALTIMETYPE initial, final;
@@ -250,6 +254,7 @@ void al_signal_start( void )
 #endif
 #if HOST_EXAMPLE_CODE
 	GETMYTIME (&initial );      
+	//GETMYTIME (initial );      
 #else
 #error "If not using host example code for timing, you must implement a method to measure time"
 	/* Board specific timer code */                      
@@ -285,7 +290,8 @@ size_t al_signal_finished( void )
 	 CALLGRIND_STOP_INSTRUMENTATION; 
 #endif
 #if HOST_EXAMPLE_CODE 
-	size_t elapsed;
+	 size_t elapsed;
+	 //unsigned long long elapsed;
 #if DO_MICA
 #if defined(_MSC_VER)
 	__asm int 3;
@@ -295,7 +301,9 @@ size_t al_signal_finished( void )
 #endif
 	al_power_finished();
 	GETMYTIME( &final );
+	//GETMYTIME( final );
 	elapsed=(size_t)(MYTIMEDIFF(final,initial));
+	//elapsed=(unsigned long long)(MYTIMEDIFF(final,initial));
 #if REPORT_THMALLOC_STATS
 	th_printf("Total allocated memory at signal finish: %.02fMB\n",(e_f32)th_malloc_total/(1024.0*1024.0));
 #endif
@@ -329,10 +337,13 @@ size_t al_signal_finished( void )
 size_t al_signal_now( void )
 {
 #if HOST_EXAMPLE_CODE
-	size_t elapsed;
+	 size_t elapsed;
+	 //unsigned long long elapsed;
 	ALTIMETYPE now;
 	GETMYTIME( &now );
+	//GETMYTIME( now );
 	elapsed=(size_t)MYTIMEDIFF(now,initial);
+	//elapsed=(unsigned long long)MYTIMEDIFF(now,initial);
 	return elapsed;
 #else
 #error "If not using host example code for timing, you must implement a method to measure time"

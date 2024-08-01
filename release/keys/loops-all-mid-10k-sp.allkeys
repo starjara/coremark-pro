@@ -1,0 +1,16 @@
+Item:fp/loops
+
+Item:preset_defines=$(foreach
+
+Item:item,$(ITEMS),$(TOPDIR)benchmarks/$(item)/preset.mak
+
+Item:)-include
+
+Item:$(preset_defines)MYOBJS
+
+Item:=
+
+Item:$(MYOBJS_WORKLOAD)
+
+Item:$(KERNEL_OBJS)endifendif
+
